@@ -4,11 +4,11 @@ import Timer from "./Timer";
 function Launch({mission}) {
     if (mission.launch.minutes == null) {
         return (
-            <div className="u-container-style u-list-item u-palette-2-base u-repeater-item u-list-item-1">
-                <div className="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+            <div className="launch-div">
+                <div className="launch-div-child">
                     <div>
-                        <h2 className="u-text u-text-1">{mission.mission}</h2>
-                        <p className="u-text u-text-2">
+                        <h2 className="u-text">{mission.mission}</h2>
+                        <p className="u-text">
                                 Vehicle: {mission.vehicle}<br/>
                                 Location: {mission.location}<br/>
                                 Launch: {mission.launch.years}
@@ -19,11 +19,11 @@ function Launch({mission}) {
         );
     } else {
         return (
-            <div className="u-container-style u-list-item u-palette-2-base u-repeater-item u-list-item-1">
-                <div className="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+            <div className="launch-div">
+                <div className="launch-div-child">
                     <div>
-                        <h2 className="u-text u-text-1">{mission.mission}</h2>
-                        <p className="u-text u-text-2">
+                        <h2 className="u-text">{mission.mission}</h2>
+                        <p className="u-text">
                             Vehicle: {mission.vehicle}<br/>
                             Location: {mission.location}<br/>
                             Launch: {mission.launch.date}.{mission.launch.months}.{mission.launch.years} at {mission.launch.hours} hours {mission.launch.minutes} minutes

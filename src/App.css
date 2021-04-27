@@ -4,7 +4,6 @@
   margin: 0 auto;
 }
 body {
-  background-color: #eff2f3;
   font-family: 'Open Sans',sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -17,14 +16,37 @@ html {
   font-size: 40px;
   margin-left: 4%;
   margin-top: 3%;
-  color: #3b4446;
 }
-.u-palette-2-base {
-  color: #ffffff;
-  background-color: #bba1a3;
+
+#theme-button {
+  float: right;
+  margin-right: 5%;
+  margin-top: 0;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 25px;
+  outline: none;
+  border-radius: 50px;
+  height: 46px;
+  line-height: 46px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  transition: box-shadow 0.2s;
 }
-.u-tabs:not([class*="u-align-"]), .u-repeater-item:not([class*="u-align-"]),
-.u-container-style:not([class*="u-align-"]) {
+
+#theme-button:hover {
+  transition: all 0.2s;
+}
+
+#theme-button:active {
+  background-color: #808080;
+}
+
+.launch-div {
   text-align: left;
   margin: 4%;
   padding: 2% 2% 2% 5%;
@@ -32,11 +54,8 @@ html {
 .u-container-style #timer {
   text-align: right;
 }
-.u-palette-2-base{
-  color: #ffffff;
-  background-color: #bba1a3;
-}
-.u-container-layout:not(p){
+
+.launch-div-child:not(p){
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -78,7 +97,6 @@ html {
 td {
   display: table-cell;
   vertical-align: inherit;
-  color: #3b4446;
 }
 th, td {
   padding: 1px 10px 5px;
@@ -92,7 +110,4 @@ table {
   border-spacing: 2px;
   padding: 5px;
   border-radius: 5px;
-}
-#timer{
-  background: #eff2f3;
 }

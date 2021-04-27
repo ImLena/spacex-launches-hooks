@@ -1,0 +1,39 @@
+html[data-theme='dark'] {
+  --background: #5d5c5d;
+  --sections: #373737;
+  --header: #ffaaaa;
+  --info: #eff2f3;
+
+}
+html[data-theme=''] {
+  --info: #3b4446;
+  --background: #eff2f3;
+  --sections: #bba1a3;
+  --header: #3b4446;
+
+}
+
+.launch-div, #theme-button{
+  color: var(--background);
+  background-color: var(--sections);
+}
+
+body {
+  background-color: var(--background);
+}
+
+.title {
+  color: var(--header);
+}
+
+td {
+  color: var(--header);
+}
+
+.u-text, #theme-button{
+  color: var(--info);
+}
+
+#timer{
+  background: var(--background);
+}
