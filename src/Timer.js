@@ -35,6 +35,7 @@ function Timer(time) {
         const timer = setTimeout(() => {
             setTime(countTime(deadline));
         }, 1000);
+        return () => clearTimeout(timer);
     });
 
     return (
